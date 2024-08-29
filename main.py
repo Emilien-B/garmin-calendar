@@ -96,7 +96,7 @@ def calendar():
         # Create an event
         e = Event()
         e.begin = activity['startTimeGMT']
-        e.end = str(datetime.datetime.strptime(activity['startTimeGMT'], '%Y-%m-%d %H:%M:%S') + datetime.timedelta(seconds=activity['distance']))
+        e.end = str(datetime.datetime.strptime(activity['startTimeGMT'], '%Y-%m-%d %H:%M:%S') + datetime.timedelta(seconds=activity['duration']))
         e.description = ''
 
         if 'locationName' in activity:
