@@ -1,0 +1,9 @@
+garminconnect
+requests
+readchar
+pwinput
+flask
+flask_cors
+ics
+gunicorn
+garth
